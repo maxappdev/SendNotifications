@@ -23,4 +23,10 @@ public class TestController {
     return linkRepository.findAll();
   }
 
+  @PostMapping("/links")
+  Link postLink(@RequestBody Link link){
+    linkRepository.save(link);
+    return link;
+  }
+
 }
