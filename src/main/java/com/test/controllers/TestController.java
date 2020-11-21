@@ -29,7 +29,7 @@ public class TestController {
 
   @PostMapping("/links")
   Link postLink(@RequestBody Link link) throws FirebaseMessagingException {
-    firebaseService.sendNotification(link, "fODDtoiRT9SV5kzzvNjIJT:APA91bG02k70CVOyfkC16Rv1Z2qlKDOaDzeXZhZ0dg16pPHEkcRRXWT-yEn2VcSBeU0yHBfmWHo_Wz1ex-8zyfwG3bmnZ7E6AnOBVt-hogJvXZhj5jCvd-Bqlu4EhPZWVVHfbTCmoWbf");
+    firebaseService.sendNotification(link, "eHO1Uea6RomGiew8JZYUWW:APA91bHPPxfst69YOw8G6HwoxpHhL1mq99BMiERZ9ghlC1IMWGPWi5VdPepW0uTKpExfirKWkDDvNiW8LZtMGtCFFA1Ot93NYAi6ypPuUpMxBDK8eSIoiaRWJ-W-4XQYTyDmzPa8CUkr");
     linkRepository.save(link);
     return link;
   }
